@@ -1,0 +1,13 @@
+window.ugc_res_jsonp_callback && ugc_res_jsonp_callback(
+
+"list.json",
+{
+  "filter": "filter/list.jsonp",
+  "image": "image/list.jsonp",
+  "music": "music/list.jsonp",
+  "audio": "audio/list.jsonp",
+  "font": "font/list.jsonp",
+  "fontbg": "fontbg/list.jsonp"
+}
+
+);

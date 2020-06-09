@@ -1,0 +1,502 @@
+[
+	{
+		"name": "Acoustic",
+		"list": [
+			{
+				"name": "AcousticGuitar1",
+				"source": "Acoustic/AcousticGuitar1.mp3",
+				"duration": "02:54"
+			},
+			{
+				"name": "ColdMorning",
+				"source": "Acoustic/ColdMorning.mp3",
+				"duration": "02:44"
+			},
+			{
+				"name": "CoolSteelBreeze",
+				"source": "Acoustic/CoolSteelBreeze.mp3",
+				"duration": "03:08"
+			},
+			{
+				"name": "Folk Bed",
+				"source": "Acoustic/FolkBed.mp3",
+				"duration": "01:50"
+			}
+		]
+	},
+	{
+		"name": "Blues",
+		"list": [
+			{
+				"name": "AcousticBlues",
+				"source": "Blues/AcousticBlues.mp3",
+				"duration": "02:32"
+			},
+			{
+				"name": "BanjoHop",
+				"source": "Blues/BanjoHop.mp3",
+				"duration": "01:14"
+			},
+			{
+				"name": "BrookersBlues",
+				"source": "Blues/BrookersBlues.mp3",
+				"duration": "01:35"
+			},
+			{
+				"name": "IDontWantToTalk",
+				"source": "Blues/IDontWantToTalk.mp3",
+				"duration": "03:06"
+			}
+		]
+	},
+	{
+		"name": "Country",
+		"list": [
+			{
+				"name": "BackToTheWood",
+				"source": "Country/BackToTheWood.mp3",
+				"duration": "01:03"
+			},
+			{
+				"name": "BanjoShort",
+				"source": "Country/BanjoShort.mp3",
+				"duration": "00:09"
+			},
+			{
+				"name": "ChasinIt",
+				"source": "Country/ChasinIt.mp3",
+				"duration": "01:14"
+			},
+			{
+				"name": "MountainSun",
+				"source": "Country/MountainSun.mp3",
+				"duration": "02:14"
+			}
+		]
+	},
+	{
+		"name": "Dance",
+		"list": [
+			{
+				"name": "AllGoodInTheWood",
+				"source": "Dance/AllGoodInTheWood.mp3",
+				"duration": "00:33"
+			},
+			{
+				"name": "BootsBootsBoots",
+				"source": "Dance/BootsBootsBoots.mp3",
+				"duration": "01:58"
+			},
+			{
+				"name": "DogHouse",
+				"source": "Dance/DogHouse.mp3",
+				"duration": "03:20"
+			},
+			{
+				"name": "Don'tStop",
+				"source": "Dance/Don'tStop.mp3",
+				"duration": "06:03"
+			}
+		]
+	},
+	{
+		"name": "EasyListening",
+		"list": [
+			{
+				"name": "12Mornings",
+				"source": "EasyListening/12Mornings.mp3",
+				"duration": "02:33"
+			},
+			{
+				"name": "Alison",
+				"source": "EasyListening/Alison.mp3",
+				"duration": "02:55"
+			},
+			{
+				"name": "Crushin",
+				"source": "EasyListening/Crushin.mp3",
+				"duration": "04:15"
+			},
+			{
+				"name": "EmilyWalksAway",
+				"source": "EasyListening/EmilyWalksAway.mp3",
+				"duration": "03:03"
+			}
+		]
+	},
+	{
+		"name": "Electronic",
+		"list": [
+			{
+				"name": "Algorithm",
+				"source": "Electronic/Algorithm.mp3",
+				"duration": "03:46"
+			},
+			{
+				"name": "Azimuth",
+				"source": "Electronic/Azimuth.mp3",
+				"duration": "04:14"
+			},
+			{
+				"name": "BlackFly",
+				"source": "Electronic/BlackFly.mp3",
+				"duration": "02:04"
+			},
+			{
+				"name": "Continuum",
+				"source": "Electronic/Continuum.mp3",
+				"duration": "05:05"
+			},
+			{
+				"name": "Ion",
+				"source": "Electronic/Ion.mp3",
+				"duration": "03:34"
+			}
+		]
+	},
+	{
+		"name": "Folk",
+		"list": [
+			{
+				"name": "AcousticMeditation2",
+				"source": "Folk/AcousticMeditation2.mp3",
+				"duration": "03:14"
+			},
+			{
+				"name": "AmazingGrace",
+				"source": "Folk/AmazingGrace.mp3",
+				"duration": "02:40"
+			},
+			{
+				"name": "Noel",
+				"source": "Folk/Noel.mp3",
+				"duration": "00:52"
+			},
+			{
+				"name": "PartingGlass",
+				"source": "Folk/PartingGlass.mp3",
+				"duration": "05:02"
+			},
+			{
+				"name": "Renaissance",
+				"source": "Folk/Renaissance.mp3",
+				"duration": "01:32"
+			}
+		]
+	},
+	{
+		"name": "Hip-Hop",
+		"list": [
+			{
+				"name": "FeelsGood2B",
+				"source": "Hip-Hop/FeelsGood2B.mp3",
+				"duration": "02:50"
+			},
+			{
+				"name": "HipHop1",
+				"source": "Hip-Hop/HipHop1.mp3",
+				"duration": "02:27"
+			}
+		]
+	},
+	{
+		"name": "Jazz",
+		"list": [
+			{
+				"name": "BeBop25",
+				"source": "Jazz/BeBop25.mp3",
+				"duration": "02:22"
+			},
+			{
+				"name": "BigSwingBand",
+				"source": "Jazz/BigSwingBand.mp3",
+				"duration": "01:50"
+			},
+			{
+				"name": "BoogieWoogieBed",
+				"source": "Jazz/BoogieWoogieBed.mp3",
+				"duration": "02:26"
+			},
+			{
+				"name": "CloserToJazz",
+				"source": "Jazz/CloserToJazz.mp3",
+				"duration": "02:22"
+			},
+			{
+				"name": "JumpinBoogieWoogie",
+				"source": "Jazz/JumpinBoogieWoogie.mp3",
+				"duration": "03:02"
+			}
+		]
+	},
+	{
+		"name": "Jazz+Funk",
+		"list": [
+			{
+				"name": "CodeBlue",
+				"source": "Jazz+Funk/CodeBlue.mp3",
+				"duration": "02:22"
+			},
+			{
+				"name": "CopAFeel",
+				"source": "Jazz+Funk/CopAFeel.mp3",
+				"duration": "02:28"
+			},
+			{
+				"name": "DatGroove",
+				"source": "Jazz+Funk/DatGroove.mp3",
+				"duration": "02:11"
+			},
+			{
+				"name": "DatGrooveFullTrack",
+				"source": "Jazz+Funk/DatGrooveFullTrack.mp3",
+				"duration": "02:09"
+			}
+		]
+	},
+	{
+		"name": "Meditative",
+		"list": [
+			{
+				"name": "Limosine",
+				"source": "Meditative/Limosine.mp3",
+				"duration": "05:27"
+			},
+			{
+				"name": "Ohm",
+				"source": "Meditative/Ohm.mp3",
+				"duration": "06:09"
+			},
+			{
+				"name": "RunningWaters",
+				"source": "Meditative/RunningWaters.mp3",
+				"duration": "02:46"
+			},
+			{
+				"name": "WheelOfKarma",
+				"source": "Meditative/WheelOfKarma.mp3",
+				"duration": "02:34"
+			}
+		]
+	},
+	{
+		"name": "One",
+		"list": [
+			{
+				"name": "BridesBallad",
+				"source": "One/BridesBallad.mp3",
+				"duration": "02:35"
+			},
+			{
+				"name": "GreekDance",
+				"source": "One/GreekDance.mp3",
+				"duration": "02:11"
+			},
+			{
+				"name": "HillbillyBed",
+				"source": "One/HillbillyBed.mp3",
+				"duration": "01:31"
+			},
+			{
+				"name": "HotSalsa",
+				"source": "One/HotSalsa.mp3",
+				"duration": "02:20"
+			},
+			{
+				"name": "LatinHouseBed",
+				"source": "One/LatinHouseBed.mp3",
+				"duration": "02:48"
+			},
+			{
+				"name": "Limosine",
+				"source": "One/Limosine.mp3",
+				"duration": "04:05"
+			},
+			{
+				"name": "Pool",
+				"source": "One/Pool.mp3",
+				"duration": "02:34"
+			},
+			{
+				"name": "SundaySpirit",
+				"source": "One/SundaySpirit.mp3",
+				"duration": "01:43"
+			}
+		]
+	},
+	{
+		"name": "Other",
+		"list": [
+			{
+				"name": "AwayInAMangerEDM",
+				"source": "Other/AwayInAMangerEDM.mp3",
+				"duration": "02:46"
+			},
+			{
+				"name": "EpicSeries",
+				"source": "Other/EpicSeries.mp3",
+				"duration": "01:59"
+			},
+			{
+				"name": "EventHorizon",
+				"source": "Other/EventHorizon.mp3",
+				"duration": "03:18"
+			},
+			{
+				"name": "EverybodyPoops",
+				"source": "Other/EverybodyPoops.mp3",
+				"duration": "02:05"
+			},
+			{
+				"name": "InAWorld",
+				"source": "Other/InAWorld.mp3",
+				"duration": "03:03"
+			},
+			{
+				"name": "SundaySpirit",
+				"source": "Other/SundaySpirit.mp3",
+				"duration": "03:27"
+			}
+		]
+	},
+	{
+		"name": "Pop+Funk",
+		"list": [
+			{
+				"name": "Ectoplasm",
+				"source": "Pop+Funk/Ectoplasm.mp3",
+				"duration": "02:37"
+			},
+			{
+				"name": "FunkyJunky",
+				"source": "Pop+Funk/FunkyJunky.mp3",
+				"duration": "02:18"
+			},
+			{
+				"name": "GroovyBaby",
+				"source": "Pop+Funk/GroovyBaby.mp3",
+				"duration": "02:27"
+			},
+			{
+				"name": "Transition",
+				"source": "Pop+Funk/Transition.mp3",
+				"duration": "01:54"
+			}
+		]
+	},
+	{
+		"name": "Reggae",
+		"list": [
+			{
+				"name": "DarkRedWine",
+				"source": "Reggae/DarkRedWine.mp3",
+				"duration": "03:22"
+			},
+			{
+				"name": "Rhastafarian",
+				"source": "Reggae/Rhastafarian.mp3",
+				"duration": "03:52"
+			}
+		]
+	},
+	{
+		"name": "Rock",
+		"list": [
+			{
+				"name": "5CentsBack",
+				"source": "Rock/5CentsBack.mp3",
+				"duration": "02:06"
+			},
+			{
+				"name": "90SecondsOfFunk",
+				"source": "Rock/90SecondsOfFunk.mp3",
+				"duration": "01:31"
+			},
+			{
+				"name": "AcousticRock",
+				"source": "Rock/AcousticRock.mp3",
+				"duration": "02:46"
+			},
+			{
+				"name": "ADarkerHeart",
+				"source": "Rock/ADarkerHeart.mp3",
+				"duration": "04:31"
+			},
+			{
+				"name": "BustinLooseWLead",
+				"source": "Rock/BustinLooseWLead.mp3",
+				"duration": "02:09"
+			}
+		]
+	},
+	{
+		"name": "Soundtrack",
+		"list": [
+			{
+				"name": "30SecondClassical",
+				"source": "Soundtrack/30SecondClassical.mp3",
+				"duration": "00:35"
+			},
+			{
+				"name": "ABrighterHeart",
+				"source": "Soundtrack/ABrighterHeart.mp3",
+				"duration": "02:20"
+			},
+			{
+				"name": "AMomentsReflection",
+				"source": "Soundtrack/AMomentsReflection.mp3",
+				"duration": "02:02"
+			},
+			{
+				"name": "ATallShip",
+				"source": "Soundtrack/ATallShip.mp3",
+				"duration": "01:02"
+			}
+		]
+	},
+	{
+		"name": "Symphony",
+		"list": [
+			{
+				"name": "AdagioInC",
+				"source": "Symphony/AdagioInC.mp3",
+				"duration": "01:35"
+			},
+			{
+				"name": "AllaWhatParody",
+				"source": "Symphony/AllaWhatParody.mp3",
+				"duration": "00:31"
+			},
+			{
+				"name": "HarkTheHeraldAngelsSing",
+				"source": "Symphony/HarkTheHeraldAngelsSing.mp3",
+				"duration": "01:49"
+			},
+			{
+				"name": "Johanna",
+				"source": "Symphony/Johanna.mp3",
+				"duration": "01:11"
+			},
+			{
+				"name": "JoyToTheWorld",
+				"source": "Symphony/JoyToTheWorld.mp3",
+				"duration": "02:47"
+			}
+		]
+	},
+	{
+		"name": "Techno",
+		"list": [
+			{
+				"name": "Sk8board",
+				"source": "Techno/Sk8board.mp3",
+				"duration": "02:06"
+			},
+			{
+				"name": "TechTalk",
+				"source": "Techno/TechTalk.mp3",
+				"duration": "01:30"
+			}
+		]
+	}
+]

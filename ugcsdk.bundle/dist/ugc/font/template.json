@@ -1,0 +1,32 @@
+[
+  {
+    "name": "黄字粉边",
+    "family": "华文隶书",
+    "color": "#FFD306",
+    "transparent": 1,
+    "borderColor": "#844200",
+    "border": 1,
+    "shadowColor": "#FFFFFF",
+    "shadowLevel": 2,
+    "list": [
+      {
+        "thumb": "thumb/stliti.png"
+      }
+    ]
+  },
+  {
+    "name": "黄字粉边",
+    "family": "华文隶书",
+    "color": "#FFD306",
+    "transparent": 1,
+    "borderColor": "#FFA042",
+    "border": 1,
+    "shadowColor": "#FFFFFF",
+    "shadowLevel": 2,
+    "list": [
+      {
+        "thumb": "thumb/stliti.png"
+      }
+    ]
+  }
+]

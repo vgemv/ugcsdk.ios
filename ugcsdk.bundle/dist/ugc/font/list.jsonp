@@ -1,0 +1,19 @@
+window.ugc_res_jsonp_callback && ugc_res_jsonp_callback(
+
+"font/list.json",
+[
+  {
+    "name": "华文隶书",
+    "family": "华文隶书",
+    "thumb": "thumb/stliti.png",
+    "source": "STLITI.TTF"
+  },
+  {
+    "name": "幼圆",
+    "family": "幼圆",
+    "thumb": "thumb/simyou.png",
+    "source": "SIMYOU.TTF"
+  }
+]
+
+);

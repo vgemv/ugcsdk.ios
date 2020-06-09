@@ -1,0 +1,167 @@
+[
+	{
+		"name": "效果",
+		"list": [
+			{
+				"name": "count.apng",
+				"source": "effect/count.apng",
+				"duration": "10.00"
+			},
+			{
+				"name": "diqiu.apng",
+				"source": "effect/diqiu.apng",
+				"duration": "01.26"
+			},
+			{
+				"name": "fire.apng",
+				"source": "effect/fire.apng",
+				"duration": "00.93"
+			},
+			{
+				"name": "lazhu.apng",
+				"source": "effect/lazhu.apng",
+				"duration": "14.10"
+			},
+			{
+				"name": "speed.apng",
+				"source": "effect/speed.apng",
+				"duration": "01.33\n"
+			},
+			{
+				"name": "target.apng",
+				"source": "effect/target.apng",
+				"duration": "02.93"
+			},
+			{
+				"name": "wave_dance.apng",
+				"source": "effect/wave_dance.apng",
+				"duration": "01.60"
+			}
+		]
+	},
+	{
+		"name": "小动物",
+		"list": [
+			{
+				"name": "bee.apng",
+				"source": "little_animal/bee.apng",
+				"duration": "00.40"
+			},
+			{
+				"name": "bird_round.apng",
+				"source": "little_animal/bird_round.apng",
+				"duration": "03.15"
+			},
+			{
+				"name": "cat_mouse_loading.apng",
+				"source": "little_animal/cat_mouse_loading.apng",
+				"duration": "04.05"
+			},
+			{
+				"name": "hand_dog.apng",
+				"source": "little_animal/hand_dog.apng",
+				"duration": "00.24"
+			},
+			{
+				"name": "hao_cat.apng",
+				"source": "little_animal/hao_cat.apng",
+				"duration": "00.80"
+			},
+			{
+				"name": "playing_qie.apng",
+				"source": "little_animal/playing_qie.apng",
+				"duration": "01.28"
+			},
+			{
+				"name": "pokemon.apng",
+				"source": "little_animal/pokemon.apng",
+				"duration": "03.03"
+			}
+		]
+	},
+	{
+		"name": "小动画",
+		"list": [
+			{
+				"name": "bee_eyes.apng",
+				"source": "little_animate/bee_eyes.apng",
+				"duration": "03.15"
+			},
+			{
+				"name": "cars.apng",
+				"source": "little_animate/cars.apng",
+				"duration": "02.88"
+			},
+			{
+				"name": "cut_cafee.apng",
+				"source": "little_animate/cut_cafee.apng",
+				"duration": "01.65"
+			},
+			{
+				"name": "earth_point.apng",
+				"source": "little_animate/earth_point.apng",
+				"duration": "04.00"
+			},
+			{
+				"name": "fly_moon.apng",
+				"source": "little_animate/fly_moon.apng",
+				"duration": "02.36"
+			},
+			{
+				"name": "health_car.apng",
+				"source": "little_animate/health_car.apng",
+				"duration": "02.04"
+			},
+			{
+				"name": "old_man.apng",
+				"source": "little_animate/old_man.apng",
+				"duration": "01.24"
+			},
+			{
+				"name": "plane.apng",
+				"source": "little_animate/plane.apng",
+				"duration": "03.90"
+			}
+		]
+	},
+	{
+		"name": "气氛",
+		"list": [
+			{
+				"name": "catleFireworks.apng",
+				"source": "qi_feng/catleFireworks.apng",
+				"duration": "03.84"
+			},
+			{
+				"name": "giftFireworks.apng",
+				"source": "qi_feng/giftFireworks.apng",
+				"duration": "04.80"
+			},
+			{
+				"name": "heart.apng",
+				"source": "qi_feng/heart.apng",
+				"duration": "07.40"
+			},
+			{
+				"name": "lightUp.apng",
+				"source": "qi_feng/lightUp.apng",
+				"duration": "05.76"
+			}
+		]
+	},
+	{
+		"name": "小标记",
+		"list": [
+			{
+				"name": "like.apng",
+				"source": "tip/like.apng",
+				"duration": "12.00"
+			},
+			{
+				"name": "right.apng",
+				"source": "tip/right.apng",
+				"duration": "01.80"
+			}
+		]
+	}
+]

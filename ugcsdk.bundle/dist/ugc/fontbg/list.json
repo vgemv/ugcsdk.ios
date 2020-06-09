@@ -1,0 +1,72 @@
+[
+    {
+        "name": "气泡",
+        "list": [
+            {
+                "name": "樱桃",
+                "startX": 0.1,
+                "startY": 0.1,
+                "endX": 0.9,
+                "endY": 0.9,
+                "wordCount": "10",
+                "thumb": "yt.jpg",
+                "source": "yt.jpg"
+            },
+            {
+                "name": "闪闪",
+                "startX": 0.1,
+                "startY": 0.1,
+                "endX": 0.9,
+                "endY": 0.9,
+                "wordCount": "10",
+                "thumb": "ss.jpg",
+                "source": "ss.jpg"
+            },
+            {
+                "name": "泡泡",
+                "startX": 0.1,
+                "startY": 0.1,
+                "endX": 0.9,
+                "endY": 0.9,
+                "wordCount": "10",
+                "thumb": "pp.jpg",
+                "source": "pp.jpg"
+            }
+        ]
+    },
+    {
+        "name": "背景",
+        "list": [
+            {
+                "name": "向日葵",
+                "startX": 0.1,
+                "startY": 0.1,
+                "endX": 0.75,
+                "endY": 0.85,
+                "wordCount": "6",
+                "thumb": "xrk.jpg",
+                "source": "xrk.jpg"
+            },
+            {
+                "name": "树叶",
+                "startX": 0.28,
+                "startY": 0.20,
+                "endX": 0.82,
+                "endY": 0.72,
+                "wordCount": "6",
+                "thumb": "sy.jpg",
+                "source": "sy.jpg"
+            },
+            {
+                "name": "鱼类",
+                "startX": 0.2,
+                "startY": 0.2,
+                "endX": 0.8,
+                "endY": 0.8,
+                "wordCount": "6",
+                "thumb": "yl.jpg",
+                "source": "yl.jpg"
+            }
+        ]
+    }
+]

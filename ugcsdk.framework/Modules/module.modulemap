@@ -1,0 +1,6 @@
+framework module ugcsdk {
+  umbrella header "ugcsdk.h"
+
+  export *
+  module * { export * }
+}

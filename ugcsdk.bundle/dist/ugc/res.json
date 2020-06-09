@@ -1,0 +1,8 @@
+{
+  "filter": "filter/list.json",
+  "image": "image/list.json",
+  "music": "music/list.json",
+  "audio": "audio/list.json",
+  "font": "font/list.json",
+  "fontbg": "fontbg/list.json"
+}
