@@ -23,10 +23,13 @@ JSUGCSDK for JS live platform.
 
   s.homepage         = 'https://github.com/vgemv/ugcsdk.ios'
 
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  # s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ssddawei' => '/' }
   s.source           = { :git => 'https://github.com/vgemv/ugcsdk.ios.git', :tag => s.version.to_s }
 
+  s.frameworks = 'CoreMedia','CoreMotion','GameController','UIKit','AVFoundation','VideoToolbox','AudioToolbox'
+  s.libraries = 'iconv','z','bz2'
+  
   s.platform         = :ios
   s.ios.deployment_target = '10.0'
   s.ios.vendored_frameworks = 'ugcsdk.framework'
