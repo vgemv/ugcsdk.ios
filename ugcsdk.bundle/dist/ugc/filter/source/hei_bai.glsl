@@ -1,4 +1,10 @@
+#ifdef GL_ES
 precision highp float;
+#else
+#define highp
+#define lowp
+#define mediump
+#endif
 
 varying vec2 textureCoordinate;
 

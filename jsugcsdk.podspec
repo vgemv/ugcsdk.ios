@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'jsugcsdk'
-  s.version          = "0.1.2 "
+  s.version          = "1.0.1 "
   s.summary          = 'JSUGCSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -23,7 +23,7 @@ JSUGCSDK for JS live platform.
 
   s.homepage         = 'https://github.com/vgemv/ugcsdk.ios'
 
-  # s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ssddawei' => '/' }
   s.source           = { :git => 'https://github.com/vgemv/ugcsdk.ios.git', :tag => s.version.to_s }
 

@@ -1,4 +1,10 @@
+#ifdef GL_ES
 precision highp float;
+#else
+#define highp
+#define lowp
+#define mediump
+#endif
 uniform  sampler2D inputImageTexture;
 uniform  sampler2D inputImageTexture2;
 varying  vec2 textureCoordinate;

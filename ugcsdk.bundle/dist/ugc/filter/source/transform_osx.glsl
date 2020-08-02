@@ -75,7 +75,7 @@ vec3 rgb2yuv(in vec3 rgb){
 
 vec2 remap_coord(in vec2 tcoord)
 {
-	bool oYUV = oformat == AV_PIX_FMT_NV21 || oformat == AV_PIX_FMT_NV12 || oformat == AV_PIX_FMT_YUV420P ;
+	bool oYUV = false;//oformat == AV_PIX_FMT_NV21 || oformat == AV_PIX_FMT_NV12 || oformat == AV_PIX_FMT_YUV420P ;
 
 	//如果是 yuv，宽度会多出 0.5（用于放置 uv 通道），此时坐标需要修正
 	/*
@@ -161,20 +161,20 @@ vec4 mytexture2D(in vec2 tcoord)
 	if(oYUV){
 		vec3 yuv = rgb2yuv( rgba.rgb );
 		
-		if(tcoord.x > 2.0/3.0){
-			if( oformat == AV_PIX_FMT_NV12)
-				rgba = vec4(yuv.y,0,0,yuv.z);
-			else if( oformat == AV_PIX_FMT_NV21)
-				rgba = vec4(yuv.z,0,0,yuv.y);
-			else if( oformat == AV_PIX_FMT_YUV420P){
-				rgba = vec4(yuv.g,0,0,0);
-				if(tcoord.y > 0.5){
-					rgba = vec4(yuv.b,0,0,0);
-				}
-			}
-		} else {
+		// if(tcoord.x > 2.0/3.0){
+		// 	if( oformat == AV_PIX_FMT_NV12)
+		// 		rgba = vec4(yuv.y,0,0,yuv.z);
+		// 	else if( oformat == AV_PIX_FMT_NV21)
+		// 		rgba = vec4(yuv.z,0,0,yuv.y);
+		// 	else if( oformat == AV_PIX_FMT_YUV420P){
+		// 		rgba = vec4(yuv.g,0,0,0);
+		// 		if(tcoord.y > 0.5){
+		// 			rgba = vec4(yuv.b,0,0,0);
+		// 		}
+		// 	}
+		// } else {
 			rgba = vec4(yuv, 1.0);
-		}
+		// }
 	}
 
 	return rgba;

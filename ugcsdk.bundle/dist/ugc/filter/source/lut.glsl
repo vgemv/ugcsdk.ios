@@ -1,5 +1,11 @@
+#ifdef GL_ES
 precision highp float;
-varying highp vec2 textureCoordinate; 
+#else
+#define highp
+#define lowp
+#define mediump
+#endif
+varying vec2 textureCoordinate; 
 uniform sampler2D inputImageTexture;
 uniform sampler2D inputImageTexture2;
 uniform lowp float percent;
@@ -11,4 +17,3 @@ void main()
  float b = texture2D(inputImageTexture2, vec2(value.b, 0.5)).b;
  gl_FragColor = mix(value, vec4(r,g,b,1.0), percent);
 } 
-      

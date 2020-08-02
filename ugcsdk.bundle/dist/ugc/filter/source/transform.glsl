@@ -1,9 +1,17 @@
+#extension GL_OES_EGL_image_external : require
+#ifdef GL_ES
 precision highp float;
+#else
+#define highp
+#define lowp
+#define mediump
+#endif
 // uniform vec2 texture_size;
 
 // uniform sampler2D inputImageTexture;
 // uniform sampler2D inputImageTexture2;
 uniform sampler2D texRGB; // Y
+uniform samplerExternalOES texOES; // Y
 uniform sampler2D texY; // Y
 uniform sampler2D texUV; // U
 uniform sampler2D texU; // U
@@ -12,14 +20,13 @@ uniform sampler2D texV; // U
 uniform int iformat;
 uniform int oformat;
 
-const int AV_PIX_FMT_NONE 		= -1;
-const int AV_PIX_FMT_YUV420P 	= 0;
-const int AV_PIX_FMT_NV12		= 23;
-const int AV_PIX_FMT_NV21		= 24;
-const int AV_PIX_FMT_RGBA		= 26;
-const int AV_PIX_FMT_RGB24		= 2;
-const int AV_PIX_FMT_AYUV64LE 	= 158;
-const int AV_PIX_FMT_AYUV64BE 	= 159;
+const int PIXFMT_NONE 		= -1;
+const int PIXFMT_YUV420P 	= 0;
+const int PIXFMT_NV12		= 1;
+const int PIXFMT_NV21		= 2;
+const int PIXFMT_RGBA		= 3;
+const int PIXFMT_RGB24		= 4;
+const int PIXFMT_OES 		= 5;
 
 varying vec2 textureCoordinate;
 uniform float width;
@@ -75,35 +82,6 @@ vec3 rgb2yuv(in vec3 rgb){
 
 vec2 remap_coord(in vec2 tcoord)
 {
-	bool oYUV = oformat == AV_PIX_FMT_NV21 || oformat == AV_PIX_FMT_NV12 || oformat == AV_PIX_FMT_YUV420P ;
-
-	//如果是 yuv，宽度会多出 0.5（用于放置 uv 通道），此时坐标需要修正
-	/*
-		nv12/nv21
-		-------------------
-		|          |  uv  |
-		|     y    |-------
-		|          |      |
-		-------------------
-		yuv420p
-		-------------------
-		|          |   u  |
-		|     y    |-------
-		|          |   v  |
-		-------------------
-	*/
-	if(oYUV){
-		if(tcoord.x > 2.0/3.0){ // 绘制坐标去到了 uv 区域，把坐标映射回 0～1 区域
-			tcoord.x = (tcoord.x - 2.0/3.0) * 3.0;
-			if(tcoord.y > 0.5){
-				tcoord.y -= 0.5;
-			}
-			tcoord.y *= 2.0;
-		} else { // y 区域，坐标放大，映射到 0~1 区域
-			tcoord.x *= 1.5;
-		}
-	}
-
 	return vec2(
 		tcoord.x * ( area_x * 2.0 + area_w ) / area_w - ( area_x ) / area_w,
 		tcoord.y * ( area_y * 2.0 + area_h ) / area_h - ( area_y ) / area_h
@@ -117,27 +95,30 @@ vec4 get_color_from_texture(in vec2 tcoord)
 	vec4 rgba;
 	yuv.x = texture2D(texY, tcoord).r;
 
-	if ( iformat == AV_PIX_FMT_NV21 ) {
+	if ( iformat == PIXFMT_NV21 ) {
 		yuv.y = texture2D(texUV, tcoord).a;
 		yuv.z = texture2D(texUV, tcoord).x;
 		isYUV = true;
-	} else if ( iformat == AV_PIX_FMT_NV12 ) {
+	} else if ( iformat == PIXFMT_NV12 ) {
 		yuv.y = texture2D(texUV, tcoord).x;
 		yuv.z = texture2D(texUV, tcoord).a;
 		isYUV = true;
-	} else if ( iformat == AV_PIX_FMT_YUV420P ) {
+	} else if ( iformat == PIXFMT_YUV420P ) {
 		yuv.y = texture2D(texU, tcoord).x;
 		yuv.z = texture2D(texV, tcoord).x;
 		isYUV = true;
-	} else if( iformat == AV_PIX_FMT_RGB24 ) {
+	} else if( iformat == PIXFMT_RGB24 ) {
 		rgba = vec4(texture2D(texRGB, tcoord).rgb, 1.0);
-	} else if( iformat == AV_PIX_FMT_RGBA ) {
+	} else if( iformat == PIXFMT_RGBA ) {
 		rgba = texture2D(texRGB, tcoord);
+	} else if( iformat == PIXFMT_OES ) {
+		rgba = texture2D(texOES, tcoord);
 	}
 	if(isYUV) {
 		rgba = vec4(yuv2rgb(yuv) ,1.0);
 	}
 
+		rgba = texture2D(texOES, tcoord);
 	return rgba;
 }
 
@@ -147,7 +128,7 @@ vec4 mytexture2D(in vec2 tcoord)
 
 	vec2 tcoord2 = remap_coord(tcoord);
 
-	bool oYUV = oformat == AV_PIX_FMT_NV21 || oformat == AV_PIX_FMT_NV12 || oformat == AV_PIX_FMT_YUV420P ;
+	bool oYUV = oformat == PIXFMT_NV21 || oformat == PIXFMT_NV12 || oformat == PIXFMT_YUV420P ;
 
 	if(tcoord2.x < 0.0 || tcoord2.x > 1.0 || tcoord2.y < 0.0 || tcoord2.y > 1.0){
 		rgba = padding_color;//vec4(1.0,.0,.0,1.0);
@@ -155,26 +136,9 @@ vec4 mytexture2D(in vec2 tcoord)
 	else {
 		rgba = get_color_from_texture(tcoord2);
 	}
-		// rgba = vec4(rgb2yuv( rgba.rgb ), 1.0);
-		// rgba = vec4(yuv2rgb( rgba.rgb ), 1.0);
 	
 	if(oYUV){
-		vec3 yuv = rgb2yuv( rgba.rgb );
-		
-		if(tcoord.x > 2.0/3.0){
-			if( oformat == AV_PIX_FMT_NV12)
-				rgba = vec4(yuv.y,0,0,yuv.z);
-			else if( oformat == AV_PIX_FMT_NV21)
-				rgba = vec4(yuv.z,0,0,yuv.y);
-			else if( oformat == AV_PIX_FMT_YUV420P){
-				rgba = vec4(yuv.g,0,0,0);
-				if(tcoord.y > 0.5){
-					rgba = vec4(yuv.b,0,0,0);
-				}
-			}
-		} else {
-			rgba = vec4(yuv, 1.0);
-		}
+		rgba = vec4(rgb2yuv( rgba.rgb ), 1.0);
 	}
 
 	return rgba;

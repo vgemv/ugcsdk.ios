@@ -1,32 +1,187 @@
 [
-    {
-        "name":"默认1",
-        "list":[
-            {
-                "name":"打鸡蛋",
-                "duration":2.060,
-                "source":"default1/打鸡蛋.mp3"
-            },
-            {
-                "name":"打喷嚏",
-                "duration":0.970,
-                "source":"default1/打喷嚏.mp3"
-            }
-        ]
-    },
-    {
-        "name":"默认2",
-        "list":[
-            {
-                "name":"action",
-                "duration":6.010,
-                "source":"default2/action.mp3"
-            },
-            {
-                "name":"bingo",
-                "duration":3.320,
-                "source":"default2/bingo.mp3"
-            }
-        ]
-    }
+	{
+		"name": "声响",
+		"list": [
+			{
+				"name": "action",
+				"source": "声响/action.mp3",
+				"duration": "05.96"
+			},
+			{
+				"name": "bingo",
+				"source": "声响/bingo.mp3",
+				"duration": "03.29"
+			},
+			{
+				"name": "叮咚",
+				"source": "声响/叮咚.mp3",
+				"duration": "01.00"
+			},
+			{
+				"name": "咻一声",
+				"source": "声响/咻一声.mp3",
+				"duration": "03.34"
+			},
+			{
+				"name": "哑铃",
+				"source": "声响/哑铃.mp3",
+				"duration": "13.01"
+			},
+			{
+				"name": "失败1",
+				"source": "声响/失败1.mp3",
+				"duration": "05.37"
+			},
+			{
+				"name": "弹手指",
+				"source": "声响/弹手指.mp3",
+				"duration": "00.27"
+			},
+			{
+				"name": "金属掉落",
+				"source": "声响/金属掉落.mp3",
+				"duration": "02.63"
+			}
+		]
+	},
+	{
+		"name": "情景",
+		"list": [
+			{
+				"name": "女孩欢笑",
+				"source": "情景/女孩欢笑.mp3",
+				"duration": "04.57"
+			},
+			{
+				"name": "女生疑问",
+				"source": "情景/女生疑问.mp3",
+				"duration": "16.66"
+			},
+			{
+				"name": "恐龙叫",
+				"source": "情景/恐龙叫.mp3",
+				"duration": "03.86"
+			},
+			{
+				"name": "恶心吃东西",
+				"source": "情景/恶心吃东西.mp3",
+				"duration": "28.00"
+			},
+			{
+				"name": "拳赛开始",
+				"source": "情景/拳赛开始.mp3",
+				"duration": "05.06"
+			},
+			{
+				"name": "放烟花",
+				"source": "情景/放烟花.mp3",
+				"duration": "04.50"
+			},
+			{
+				"name": "木板行走",
+				"source": "情景/木板行走.mp3",
+				"duration": "23.24"
+			},
+			{
+				"name": "水滴",
+				"source": "情景/水滴.mp3",
+				"duration": "17.06"
+			},
+			{
+				"name": "火箭射击",
+				"source": "情景/火箭射击.mp3",
+				"duration": "23.00"
+			},
+			{
+				"name": "磨刀霍霍",
+				"source": "情景/磨刀霍霍.mp3",
+				"duration": "19.00"
+			},
+			{
+				"name": "胶片放映",
+				"source": "情景/胶片放映.mp3",
+				"duration": "36.42"
+			}
+		]
+	},
+	{
+		"name": "有趣",
+		"list": [
+			{
+				"name": "打喷嚏",
+				"source": "有趣/打喷嚏.mp3",
+				"duration": "00.91"
+			},
+			{
+				"name": "打鸡蛋",
+				"source": "有趣/打鸡蛋.mp3",
+				"duration": "02.00"
+			}
+		]
+	},
+	{
+		"name": "环境",
+		"list": [
+			{
+				"name": "倒水声",
+				"source": "环境/倒水声.mp3",
+				"duration": "07.68"
+			},
+			{
+				"name": "农村",
+				"source": "环境/农村.mp3",
+				"duration": "58.95"
+			},
+			{
+				"name": "冷风",
+				"source": "环境/冷风.mp3",
+				"duration": "04.41"
+			},
+			{
+				"name": "冷风2",
+				"source": "环境/冷风2.mp3",
+				"duration": "08.41"
+			},
+			{
+				"name": "恐怖管道",
+				"source": "环境/恐怖管道.mp3",
+				"duration": "12.00"
+			},
+			{
+				"name": "打雷闪电",
+				"source": "环境/打雷闪电.mp3",
+				"duration": "05.48"
+			},
+			{
+				"name": "掉水里",
+				"source": "环境/掉水里.mp3",
+				"duration": "06.03"
+			},
+			{
+				"name": "水下",
+				"source": "环境/水下.mp3",
+				"duration": "00.08"
+			},
+			{
+				"name": "水泡声",
+				"source": "环境/水泡声mp3.mp3",
+				"duration": "26.77"
+			},
+			{
+				"name": "煮熔液",
+				"source": "环境/煮熔液.mp3",
+				"duration": "03.10"
+			},
+			{
+				"name": "集市",
+				"source": "环境/集市.mp3",
+				"duration": "30.12"
+			},
+			{
+				"name": "鸟语花香",
+				"source": "环境/鸟语花香.mp3",
+				"duration": "54.59"
+			}
+		]
+	}
 ]

@@ -21,36 +21,27 @@
                 "source":"source/red_booth.glsl"
             },
             {
+                "name":"波谱",
+                "percent":"100",
+                "thumb":"thumb/pop.jpg",
+                "source":"source/pop.glsl"
+            },
+            {
                 "name":"光圈",
                 "percent":"100",
-                "thumb":"thumb/red_booth.jpg",
+                "thumb":"thumb/guang_quan.jpg",
                 "source":"source/guang_quan.glsl"
             },
             {
                 "name":"马赛克",
                 "percent":"100",
-                "thumb":"thumb/red_booth.jpg",
+                "thumb":"thumb/ma_sai_ke.jpg",
                 "source":"source/ma_sai_ke.glsl"
-            },
-            {
-                "name":"波谱",
-                "percent":"100",
-                "thumb":"thumb/red_booth.jpg",
-                "source":"source/pop.glsl"
-            },
-            {
-                "name":"朝阳",
-                "percent":"100",
-                "thumb":"thumb/red_booth.jpg",
-                "source_list":[
-                    "source/zhao_yang.1.png"
-                ],
-                "source":"source/lut3d.glsl"
             },
             {
                 "name":"经典",
                 "percent":"100",
-                "thumb":"thumb/red_booth.jpg",
+                "thumb":"thumb/jing_dian.jpg",
                 "source_list":[
                     "source/jing_dian.1.png",
                     "source/jing_dian.2.png",
@@ -58,11 +49,25 @@
                     "source/jing_dian.4.png"
                 ],
                 "source":"source/jing_dian.glsl"
+            }
+        ]
+    },
+    {
+        "name":"调色",
+        "list":[
+            {
+                "name":"朝阳",
+                "percent":"100",
+                "thumb":"thumb/zhao_yang.jpg",
+                "source_list":[
+                    "source/zhao_yang.1.png"
+                ],
+                "source":"source/lut3d.glsl"
             },
             {
                 "name":"粉桃",
                 "percent":"100",
-                "thumb":"thumb/red_booth.jpg",
+                "thumb":"thumb/fen_tao.jpg",
                 "source_list":[
                     "source/fen_tao.png"
                 ],
@@ -71,7 +76,7 @@
             {
                 "name":"海蓝",
                 "percent":"100",
-                "thumb":"thumb/red_booth.jpg",
+                "thumb":"thumb/hai_lan.jpg",
                 "source_list":[
                     "source/hai_lan.png"
                 ],
@@ -80,7 +85,7 @@
             {
                 "name":"海盐",
                 "percent":"100",
-                "thumb":"thumb/red_booth.jpg",
+                "thumb":"thumb/hai_yan.jpg",
                 "source_list":[
                     "source/hai_yan.png"
                 ],
@@ -89,19 +94,19 @@
             {
                 "name":"黑白",
                 "percent":"100",
-                "thumb":"thumb/red_booth.jpg",
+                "thumb":"thumb/hei_bai.jpg",
                 "source":"source/hei_bai.glsl"
             },
             {
                 "name":"胶片",
                 "percent":"100",
-                "thumb":"thumb/red_booth.jpg",
+                "thumb":"thumb/jiao_pian.jpg",
                 "source":"source/jiao_pian.glsl"
             },
             {
                 "name":"红润",
                 "percent":"100",
-                "thumb":"thumb/red_booth.jpg",
+                "thumb":"thumb/hong_run.jpg",
                 "source_list":[
                     "source/hong_run.png"
                 ],
@@ -110,7 +115,7 @@
             {
                 "name":"雪梨",
                 "percent":"100",
-                "thumb":"thumb/red_booth.jpg",
+                "thumb":"thumb/xue_li.jpg",
                 "source_list":[
                     "source/xue_li.png"
                 ],
@@ -119,7 +124,7 @@
             {
                 "name":"阳光",
                 "percent":"100",
-                "thumb":"thumb/red_booth.jpg",
+                "thumb":"thumb/yang_guang.jpg",
                 "source_list":[
                     "source/yang_guang.png"
                 ],
@@ -128,22 +133,11 @@
             {
                 "name":"优雅",
                 "percent":"100",
-                "thumb":"thumb/red_booth.jpg",
+                "thumb":"thumb/you_ya.jpg",
                 "source_list":[
                     "source/you_ya.png"
                 ],
                 "source":"source/lut3d.glsl"
-            }
-        ]
-    },
-    {
-        "name":"风格2",
-        "list":[
-            {
-                "name":"红色电话亭2",
-                "percent":"100",
-                "thumb":"thumb/red_booth.jpg",
-                "source":"source/red_booth.glsl"
             }
         ]
     }

@@ -1,3 +1,10 @@
+#ifdef GL_ES
+precision highp float;
+#else
+#define highp
+#define lowp
+#define mediump
+#endif
 varying highp vec2 textureCoordinate;
 uniform sampler2D inputImageTexture;
 const highp vec2 iResolution= vec2(540.0,960.0);
